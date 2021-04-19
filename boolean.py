@@ -18,6 +18,10 @@ def print_boolean():
 
     print(9 >= 9.0)
 
+# Greater than and smaller than operators can also be used to compare strings lexicographically
+    # (the alphabetical order of words is based on the alphabetical order of their component letters).
+    print("priya" <= "priyanka")
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
