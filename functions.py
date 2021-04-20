@@ -66,3 +66,62 @@ maxi = maximum(2, 3, 4)  # function to find maximum of 3 numbers
 print(maxi)
 
 # octothrope used to comment
+
+# functions as object
+"""
+Although they are created differently from normal variables, functions are just like any other kind of value.
+They can be assigned and reassigned to variables, and later referenced by those names.
+
+"""
+
+
+def multiply(x, y):
+    return x * y
+
+
+a = 4
+b = 7
+operation = multiply
+# the name operation can also be used to call the function.
+print(operation(a, b))
+
+
+# Functions can also be used as arguments of other functions.
+def add(x, y):
+    return x + y
+
+
+def do_twice(func, x, y):
+    """
+
+    :param func:
+    :param x:
+    :param y:
+    :return:
+    """
+    return func(func(x, y), func(x, y))
+
+
+a = 5
+b = 10
+
+print(do_twice(add, a, b))
+
+
+# As you can see, the function do_twice takes a function as its argument and calls it in its body.
+
+
+def square(x):
+    """
+
+    :param x: square function
+    :return: square of the function has to be returned
+    """
+    return x * x
+
+
+def test(func, x):
+    print(func(x))
+
+
+test(square, 42)
