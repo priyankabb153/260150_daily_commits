@@ -468,4 +468,19 @@ will be used to illustrate the meaning of bitwise operators in Python. Analyze t
 
 
 
+In general, a typical function invocation may look like this:
+
+result = function(arg)
+
+
+The function takes an argument, does something, and returns a result.
+
+
+
+A typical method invocation usually looks like this:
+
+result = data.method(arg)
+
+
+
 """
